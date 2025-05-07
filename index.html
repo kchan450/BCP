@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Demo – Google Dialogflow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Dialogflow Styles and Script -->
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f9ff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto 40px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2a5599;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Chatbot Demo</h1>
+    <p>This demo showcases our AI-powered healthcare assistant using Google Dialogflow.</p>
+    <p>Try asking about symptoms, general health info, or available services.</p>
+  </div>
+
+  <!-- Google Dialogflow Agent Embed -->
+  <df-messenger
+    location="us-central1"
+    project-id="speedy-sunspot-454923-k0"
+    agent-id="c49cc671-65ad-486d-b896-47cf2f011df0"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble chat-title="k-agent">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+
+</body>
+</html>
