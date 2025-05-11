@@ -10,12 +10,19 @@
   <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger.js"></script>
 
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
       background-color: #f5f9ff;
+      font-family: 'Segoe UI', sans-serif;
       color: #333;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
@@ -23,6 +30,7 @@
       margin: 80px auto 40px;
       padding: 0 20px;
       text-align: center;
+      flex: 1;
     }
 
     h1 {
@@ -44,14 +52,13 @@
       border-radius: 8px;
     }
 
-.footer {
-  margin-top: 40px;
-  font-size: 11px;  /* smaller text */
-  color: #888;
-  text-align: center;
-}
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      color: #888;
+      padding: 10px 0;
+    }
 
-    
     df-messenger {
       z-index: 999;
       position: fixed;
@@ -67,20 +74,23 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>Virtual Health Care Chatbot Demo</h1>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Virtual Health Care Chatbot Demo</h1>
 
-    <p>This AI-powered healthcare assistant was built to support users with accessible health information and guidance for VCH. It offers the following features:</p>
-    <ul>
-      <li>Check symptoms</li>
-      <li>Connect with a live human agent</li>
-      <li>Access device usage guidelines</li>
-    </ul>
-    
-    <img src="dialogflow screenshot VHC.png" alt="Dialogflow Agent Screenshot" width="600">
+      <p>This AI-powered healthcare assistant was built to support users with accessible health information and guidance for VCH. It offers the following features:</p>
+      <ul>
+        <li>Check symptoms</li>
+        <li>Connect with a live human agent</li>
+        <li>Access device usage guidelines</li>
+      </ul>
+      <p><em>Users can also end the session at any time by selecting "End Session" from the menu.</em></p>
+
+      <img src="dialogflow screenshot VHC.png" alt="Dialogflow Agent Screenshot" width="600">
+    </div>
 
     <div class="footer">
-    <p>Developed by the BCIT WeSolve Team using Google Dialogflow CX | 2025</p>
+      <p>Developed by the BCIT WeSolve Team using Google Dialogflow CX | 2025</p>
     </div>
   </div>
 
