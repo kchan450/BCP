@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chatbot Demo</title>
+  <title>Chatbot Demo – Virtual Health Care Agent</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Dialogflow Styles and Script -->
   <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger.js"></script>
 
   <style>
     body {
@@ -29,8 +29,25 @@
       color: #2a5599;
     }
 
-    p {
+    p, ul {
       font-size: 18px;
+      text-align: left;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
     }
 
     df-messenger {
@@ -49,14 +66,28 @@
 <body>
 
   <div class="container">
-    <h1>Chatbot Demo (NEW) </h1>
-    <p>This demo showcases our MVP version of an AI-powered healthcare assistant for VCH.</p>
-    <p>Try asking about symptoms, general health information, or available services.</p>
+    <h1>Virtual Health Care Chatbot Demo</h1>
 
-    <img src="dialogflow screenshot VHC.png" alt="Dialogflow Screenshot" width="600">
+    <p>This AI-powered healthcare assistant was built using <strong>Google Dialogflow CX</strong>. It allows users to:</p>
+    <ul>
+      <li>Check symptoms</li>
+      <li>Connect with a live human agent</li>
+      <li>Access device usage guidelines</li>
+      <li>End the session at any time</li>
+    </ul>
+
+    <p><strong>Platform:</strong> Google Dialogflow CX</p>
+    <p><strong>Project:</strong> BCIT Business Consulting Project (WeSolve)</p>
+    <p><strong>Client:</strong> Vancouver Coastal Health (VCH)</p>
+
+    <img src="dialogflow screenshot VHC.png" alt="Dialogflow Agent Screenshot" width="600">
+
+    <div class="footer">
+      <p>Developed by the BCIT WeSolve Team | 2025</p>
+    </div>
   </div>
 
-  <!-- Updated Dialogflow Embed -->
+  <!-- Chatbot Embed -->
   <df-messenger
     location="us-central1"
     project-id="speedy-sunspot-454923-k0"
