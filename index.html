@@ -36,13 +36,13 @@
     df-messenger {
       z-index: 999;
       position: fixed;
-      bottom: 16px;
-      right: 16px;
       --df-messenger-font-color: #000;
       --df-messenger-font-family: Google Sans;
       --df-messenger-chat-background: #f3f6fc;
       --df-messenger-message-user-background: #d3e3fd;
-      --df-messenger-message-bot-background: #ffffff;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
     }
   </style>
 </head>
@@ -50,21 +50,20 @@
 
   <div class="container">
     <h1>Chatbot Demo</h1>
-<p>This demo showcases our MVP version of an AI-powered healthcare assistant for VCH.</p>
-<p>Try asking about symptoms, general health information, or available services.</p>
+    <p>This demo showcases our MVP version of an AI-powered healthcare assistant for VCH.</p>
+    <p>Try asking about symptoms, general health information, or available services.</p>
 
-<img src="dialogflow screenshot.png" alt="Dialogflow Screenshot" width="600">
-
+    <img src="dialogflow screenshot.png" alt="Dialogflow Screenshot" width="600">
   </div>
 
-  <!-- Google Dialogflow Agent Embed -->
+  <!-- Updated Dialogflow Embed -->
   <df-messenger
     location="us-central1"
     project-id="speedy-sunspot-454923-k0"
     agent-id="c49cc671-65ad-486d-b896-47cf2f011df0"
     language-code="en"
     max-query-length="-1">
-    <df-messenger-chat-bubble chat-title="k-agent">
+    <df-messenger-chat-bubble chat-title="Virtual Health Care Agent">
     </df-messenger-chat-bubble>
   </df-messenger>
 
