@@ -106,16 +106,11 @@
     language-code="en"
     max-query-length="-1">
     <df-messenger-chat-bubble chat-title="Virtual Health Care Agent">
+        chat-width="1000px"
+  chat-height="1000px"
     </df-messenger-chat-bubble>
   </df-messenger>
 
-  <script>
-  window.addEventListener('dfMessengerLoaded', function(event) {
-    const iframe = document.querySelector("df-messenger").shadowRoot.querySelector("iframe");
-    iframe.style.width = "1000px";
-    iframe.style.height = "1000px";
-  });
-</script>
   
 </body>
 </html>
