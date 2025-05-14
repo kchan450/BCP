@@ -74,10 +74,14 @@
       right: 16px;
     }
 
-    df-messenger::part(chat-frame) {
-    width: 100px;
-    height: 1500px;
-  }
+  <script>
+    window.addEventListener('dfMessengerLoaded', function(event) {
+      const iframe = document.querySelector("df-messenger").shadowRoot.querySelector("iframe");
+      iframe.style.width = "1000px";
+      iframe.style.height = "1000px";
+    });
+  </script>
+    
   </style>
 </head>
 <body>
